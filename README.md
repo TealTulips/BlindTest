@@ -3,8 +3,11 @@ Blind test artifacts
 
 Quiz Application: 
 quizApplication contains all the source code required for the application. 
+
 CompleteTO.java contains the test for the application with complete test oracle.
+
 quizsched-FAULTS.java is the faulty version.
+
 quizsched.java is the correct version.
 
 
