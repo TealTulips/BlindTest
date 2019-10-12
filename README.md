@@ -16,7 +16,7 @@ CalendarCTO.java contains the test for the application with complete test oracle
 Calendar-FAULTS.java is the faulty version of the application.
 Calendar-ORIG.java is the correct version of the application.
 
-================================================================================
+===============================================================================
 
 Data:
 CalendarUndergradData has data from students for calendar application
