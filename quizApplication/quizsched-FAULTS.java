@@ -191,7 +191,7 @@ public class quizsched {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("******************************************************************************");
-		System.out.println("GMU quiz retake scheduler for class " + course.getCourseTitle());
+		System.out.println("University quiz retake scheduler for class " + course.getCourseTitle());
 		System.out.println("******************************************************************************");
 		System.out.println("");
 		System.out.println("");
