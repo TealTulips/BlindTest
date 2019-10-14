@@ -50,10 +50,8 @@ public class CompleteTO {
 			String output;
 			LocalDate today =  LocalDate.now();
 			LocalDate endDay = today.plusDays(new Long(daysAvailable));
-			// output="\n";
-			// output+="\n";
 			output = "******************************************************************************\n";
-			output += "GMU quiz retake scheduler for class "+course.getCourseTitle()+"\n";
+			output += "University quiz retake scheduler for class "+course.getCourseTitle()+"\n";
 			output += "******************************************************************************";
 			output += "\n";
 			output += "\n";
@@ -78,7 +76,6 @@ public class CompleteTO {
 			output += today.getDayOfWeek() + ", " + today.getMonth() + " " + today.getDayOfMonth() + "\n";
 			output += "Currently scheduling quizzes for the next two weeks, until ";
 			output += endDay.getDayOfWeek() + ", " + endDay.getMonth() + " " + endDay.getDayOfMonth() + "\n";
-			// output+="\n";
 			int quizRetakeCount = 0; /* CLI */
 			for (retakeBean r : retakesList) {
 				LocalDate retakeDay = r.getDate();
@@ -100,12 +97,7 @@ public class CompleteTO {
 						LocalDate quizDay = qb.getDate();
 						LocalTime quizTime = qb.getTime();
 						LocalDate lastAvailableDay = quizDay.plusDays(new Long(daysAvailable));
-						// To retake a quiz on a given retake day, the retake day must be within two
-						// ranges:
-						// quizDay <= retakeDay <= lastAvailableDay --> (!quizDay > retakeDay) &&
-						// !(retakeDay > lastAvailableDay)
-						// today <= retakeDay <= endDay --> !(today > retakeDay) && !(retakeDay >
-						// endDay)
+						
 						//Fault2 start
 						 if ((quizDay.isBefore(startSkip) && startSkip.isBefore(lastAvailableDay)) ||
 					                (quizDay.isBefore(endSkip) && endSkip.isBefore(lastAvailableDay)))
