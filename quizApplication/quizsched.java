@@ -50,7 +50,7 @@ public class quizsched {
 
 	// Data files
 	/* CLI: All variables changed to static to use in main() */
-	private static final String dataLocation = "src/"; /* CLI */ // changed to src/
+	private static final String dataLocation = "src/"; /* CLI */ 
 	private static final String separator = ",";
 	private static final String courseBase = "course";
 	private static final String quizzesBase = "quiz-orig";
@@ -168,7 +168,7 @@ public class quizsched {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("******************************************************************************");
-		System.out.println("GMU quiz retake scheduler for class " + course.getCourseTitle());
+		System.out.println("University quiz retake scheduler for class " + course.getCourseTitle());
 		System.out.println("******************************************************************************");
 		System.out.println("");
 		System.out.println("");
